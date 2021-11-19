@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Cookie Clicker</title>
+
+<body>
+	
+
+	<h1 id=coockies>0 cookies</h1>
+	<button onclick="plus_one()">Bake a cookie</button>
+
+	<script>
+		var n = 0;
+
+		function plus_one() {
+			n++;
+			document.getElementById("coockies").innerHTML = `${n} cookies`;
+		}
+	</script>
+</body>
+
+</html>
