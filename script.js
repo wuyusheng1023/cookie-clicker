@@ -7,12 +7,19 @@ function plusOne() {
 }
 
 function reinforcedIndexFinger() {
-	cpc = 2;
-	document.getElementById("upgrade001").style.visibility = 'hidden';
-	document.getElementById("upgrade002").style.visibility = 'visible';
+	if (n > 99) {
+		cpc = 2;
+		document.getElementById("upgrade001").style.visibility = 'hidden';
+		document.getElementById("upgrade002").style.visibility = 'visible';
+		n -= 100
+		document.getElementById("coockies").innerHTML = `${n} cookies`;
+	}
 }
-
 function carpalTunnelPreventionCream() {
-	cpc = 4;
-	document.getElementById("upgrade002").style.visibility = 'hidden';
+	if (n > 499) {
+		cpc = 4;
+		document.getElementById("upgrade002").style.visibility = 'hidden';
+		n -= 500
+		document.getElementById("coockies").innerHTML = `${n} cookies`;
+	}
 }
